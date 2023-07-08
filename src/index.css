@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: 'Geologica', sans-serif;
 }
 html {  
   scroll-behavior: smooth;
+}
+body {
+  background: var(--bgPrimary);
+}
+
+:root {
+  --bgPrimary: #F5F5F5;
+  --bgSecondary: #EAECEF;
+  --txtPrimary: #9CA2AA;
+  --txtSecondary: #202B3B;
+}
+.darkMode:root {
+  --bgPrimary: #0B131E;
+  --bgSecondary: #202B3B;
+  --txtPrimary: #9CA2AA;
+  --txtSecondary: #F0F1F1;
 }
