@@ -1,0 +1,64 @@
+
+
+.content {
+    width: 100%;
+    height: auto;
+
+    background-color: var(--bgSecondary);
+    border-radius: 15px;
+
+    &__form {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__input {
+        width: 100%;
+        height: auto;
+        
+        border-radius: 15px;
+        background: none;
+        border: none;
+        outline: none;
+
+        color: var(--txtPrimary);
+        font-size: 15px;
+        font-weight: 300;
+        padding: 18px;
+
+        &::placeholder {
+            color: var(--txtPrimary);
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: auto;
+
+        color: var(--txtPrimary);
+    }
+
+    &__lastUpdated {
+        color: var(--txtSecondary);
+        font-size: 13px;
+        font-weight: 300;
+    
+        margin-left: 18px;
+    }
+
+    @media screen and (max-width:960px) {
+        &__input {
+            font-size: 12px;
+        }
+        &__icon {
+            width: 16px;
+        }
+        &__lastUpdated {
+            font-size: 10px;
+        }
+    }
+}
