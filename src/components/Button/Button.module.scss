@@ -1,0 +1,28 @@
+
+
+.btn {
+    background: var(--bgPrimary);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+
+    margin-right: 18px;
+    padding: 10px;
+    
+    cursor: pointer;
+
+    &__content {
+        width: 100%;
+        height: auto;
+
+        cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
+
+        display: flex;
+    }
+
+    @media screen and (max-width:960px) {
+        margin-right: 14px;
+    }
+}
