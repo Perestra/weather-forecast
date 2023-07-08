@@ -1,0 +1,80 @@
+
+
+.daily {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 3px;
+    border-bottom: 1px solid var(--txtPrimary);
+    
+    & > p {
+        color: var(--txtSecondary);
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+    }
+    & > span {
+        color: var(--txtPrimary);
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+    }
+    &__span {
+        color: var(--txtPrimary);
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > p {
+            color: var(--txtSecondary);
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        margin-top: 10px;
+        padding: 5px 15px;
+        & > p {
+            font-size: 14px;
+        }
+        & > span {
+            font-size: 14px;
+        }
+        &__info {
+            & > img {
+                width: 42px;
+                height: auto;
+                object-fit: fill;
+            }
+            & > p {
+                font-size: 14px;
+            }
+        }
+    }
+    @media screen and (max-width: 1020px) {
+        & > p {
+            font-size: 12px;
+        }
+        & > span {
+            font-size: 12px;
+        }
+        &__info {
+            & > img {
+                width: 18px;
+            }
+            & > p {
+                font-size: 10px;
+            }
+        }
+    }
+    
+}

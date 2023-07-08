@@ -1,0 +1,32 @@
+
+
+.forecast {
+    width: 100%;
+    height: inherit;
+
+    padding: 30px;
+    background-color: var(--bgSecondary);
+    border-radius: 15px;
+
+    & > h3 {
+        color: var(--txtPrimary);
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+    }
+
+    &__ul {
+        display: flex;
+        flex-direction: column;
+
+        list-style: none;
+    }
+
+    @media screen and (max-width: 960px) {
+        padding: 15px;
+        & > h3 {
+        font-size: 13px;
+        }
+    }
+}
