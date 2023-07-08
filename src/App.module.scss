@@ -1,0 +1,53 @@
+
+
+.app {
+    width: 100%;
+    height: auto;
+
+    padding: 20px;
+
+    &__header {
+        width: 100%;
+        height: auto;
+    }
+
+    &__main {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__currentForecast {
+        width: 55%;
+        height: auto;
+    }
+
+    &__daysForecast {
+        width: 45%;
+        height: auto;
+    }
+
+    &__aside {
+        height: 100%;
+    }
+    
+    @media screen and (max-width:1280px) {
+        padding: 10px;
+            
+        &__main {
+            flex-direction: column;
+            row-gap: 15px;
+        }
+        &__currentForecast {
+            width: 100%;
+            height: auto;
+        }
+        &__daysForecast {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
