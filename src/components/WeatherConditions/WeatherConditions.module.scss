@@ -1,0 +1,48 @@
+
+
+.forecast {
+    width: 100%;
+    height: auto;
+
+    padding: 30px;
+    background-color: var(--bgSecondary);
+    border-radius: 15px;
+
+    margin-top: 30px;
+
+    & > h3 {
+        color: var(--txtPrimary);
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        &:first-child {
+            margin-left: 20px;
+        }
+    }
+
+    &__iconCondition{
+        color: var(--txtPrimary);
+        width: 22px;
+        height: auto;
+    }
+
+    @media screen and (max-width:960px) {
+        padding: 15px;
+        margin-top: 15px;
+        & > h3 {
+            font-size: 13px;
+        }
+        &__item {
+            &:first-child {
+                margin-left: 10px;
+            }
+        }
+        &__iconCondition{
+            width: 16px;
+        }
+    }
+}
