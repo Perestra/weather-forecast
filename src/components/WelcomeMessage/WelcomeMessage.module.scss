@@ -1,0 +1,55 @@
+
+
+.main {
+    width: 100%;
+    height: auto;
+
+    margin: 50px 0;
+
+    &__section {
+        width: 100%;
+        max-width: 60%;
+        height: auto;
+        
+        margin: auto;
+        padding: 30px;
+        background-color: var(--bgSecondary);
+        border-radius: 15px;
+    }
+
+    &__message {
+        text-align: center;
+        & > h1 {
+        color: var(--txtSecondary);
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        }
+    }
+
+    @media screen and (max-width:1280px) {
+        &__message {
+            & > h1 {
+            font-size: 18px;
+            }
+        }
+    }
+    @media screen and (max-width:960px) {
+        &__message {
+            & > h1 {
+            font-size: 14px;
+            }
+        }
+    }
+    @media screen and (max-width:640px) {
+        margin: 30px 0;
+        &__section {
+            max-width: 100%;
+        }
+        &__message {
+            & > h1 {
+            font-size: 12px;
+            }
+        }
+    }
+}
