@@ -24,7 +24,7 @@ const App = () => {
   const getForecast = (e) => {
     e.preventDefault()
 
-    axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${keyAPI}&q=${location}&days=${days}&lang=${lang}`)
+    axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${keyAPI}&q=${location}&days=${days}&lang=${lang}`)
       .then(res => {
         setError('')
         setData(res.data)
